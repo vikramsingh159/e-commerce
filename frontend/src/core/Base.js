@@ -21,9 +21,9 @@ const Base = ({
         <h4>If you got any questions, feel free to reach out!</h4>
         <button className="btn btn-warning btn-lg">Contact Us</button>
       </div>
-      <div className="container">
-        <span className="text-muted">
-          An Amazing <span className="text-white">MERN</span> Bootcamp
+      <div className="container text-center">
+        <span className="text-white">
+          © 2023 Copyright All Received  VIKRAM SINGH
         </span>
       </div>
     </footer>

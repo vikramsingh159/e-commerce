@@ -12,6 +12,7 @@ const Cart = () => {
 
   useEffect(() => {
     setProducts(loadCart());
+    // eslint-disable-next-line
   }, [reload]);
 
   const loadAllProducts = () => {

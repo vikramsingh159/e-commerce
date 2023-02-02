@@ -6,6 +6,7 @@ import StripeCheckoutButton from "react-stripe-checkout";
 import { API } from "../backend";
 import { createOrder } from "./helper/orderHelper";
 
+
 const StripeCheckout = ({
   products,
   setReload = f => f,
@@ -56,6 +57,9 @@ const StripeCheckout = ({
         token={makePayment}
         amount={getFinalAmount() * 100}
         name="Buy Tshirts"
+        currency="inr"
+        shippingAddress
+        billingAddress
       >
         <button className="btn btn-success">Pay with stripe</button>
       </StripeCheckoutButton>

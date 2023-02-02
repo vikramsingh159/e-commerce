@@ -21,6 +21,7 @@ const ManageCategories = () => {
 
   useEffect(() => {
     preload();
+    // eslint-disable-next-line
   }, []);
 
   return (
@@ -52,7 +53,7 @@ const ManageCategories = () => {
               </Link>
             </div>
             <div className="col-4">
-              <button onClick={() => {}} className="btn btn-danger">
+              <button onClick={() => { }} className="btn btn-danger">
                 Delete
               </button>
             </div>

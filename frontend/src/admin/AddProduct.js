@@ -49,6 +49,7 @@ const AddProduct = () => {
 
   useEffect(() => {
     preload();
+    // eslint-disable-next-line
   }, []);
 
   const onSubmit = event => {
@@ -90,8 +91,8 @@ const AddProduct = () => {
   const createProductForm = () => (
     <form>
       <span>Post photo</span>
-      <div className="form-group">
-        <label className="btn btn-block btn-success">
+      <div className="form-group my-1">
+        <label className="btn btn-block d-block btn-success">
           <input
             onChange={handleChange("photo")}
             type="file"
@@ -101,7 +102,7 @@ const AddProduct = () => {
           />
         </label>
       </div>
-      <div className="form-group">
+      <div className="form-group my-1">
         <input
           onChange={handleChange("name")}
           name="photo"
@@ -110,7 +111,7 @@ const AddProduct = () => {
           value={name}
         />
       </div>
-      <div className="form-group">
+      <div className="form-group my-1">
         <textarea
           onChange={handleChange("description")}
           name="photo"
@@ -119,7 +120,7 @@ const AddProduct = () => {
           value={description}
         />
       </div>
-      <div className="form-group">
+      <div className="form-group my-1">
         <input
           onChange={handleChange("price")}
           type="number"
@@ -128,7 +129,7 @@ const AddProduct = () => {
           value={price}
         />
       </div>
-      <div className="form-group">
+      <div className="form-group my-1">
         <select
           onChange={handleChange("category")}
           className="form-control"
@@ -143,7 +144,7 @@ const AddProduct = () => {
             ))}
         </select>
       </div>
-      <div className="form-group">
+      <div className="form-group my-1">
         <input
           onChange={handleChange("stock")}
           type="number"

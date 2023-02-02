@@ -75,6 +75,7 @@ const UpdateProduct = ({ match }) => {
 
   useEffect(() => {
     preload(match.params.productId);
+    // eslint-disable-next-line
   }, []);
 
   //TODO: work on it

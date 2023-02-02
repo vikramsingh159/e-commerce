@@ -22,6 +22,7 @@ const ManageProducts = () => {
 
   useEffect(() => {
     preload();
+    // eslint-disable-next-line
   }, []);
 
   const deleteThisProduct = productId => {

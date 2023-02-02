@@ -1,5 +1,5 @@
 import React from "react";
-import { API } from "../../backend";
+import { API } from "./../../backend";
 
 const ImageHelper = ({ product }) => {
   const imageurl = product
@@ -9,7 +9,7 @@ const ImageHelper = ({ product }) => {
     <div className="rounded border border-success p-2">
       <img
         src={imageurl}
-        alt="photo"
+        alt="photos"
         style={{ maxHeight: "100%", maxWidth: "100%" }}
         className="mb-3 rounded"
       />
